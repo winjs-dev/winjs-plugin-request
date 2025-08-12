@@ -1,20 +1,25 @@
 {
-  "name": "winjs-plugin-template",
+  "name": "@winner-fed/plugin-request",
   "keywords": [
     "winjs",
     "plugin",
-    "template",
-    "winner-fed",
-    "winjs-dev",
-    "rslib",
-    "rsbuild",
+    "request",
+    "http",
+    "axios",
+    "vue-hooks-plus",
+    "vue3",
+    "vue2",
+    "composition-api",
+    "useRequest",
+    "interceptor",
     "typescript",
-    "biome"
+    "winner-fed",
+    "winjs-dev"
   ],
-  "version": "0.0.0",
+  "version": "1.0.4",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/winjs-dev/winjs-plugin-template.git"
+    "url": "git+https://github.com/winjs-dev/winjs-plugin-request.git"
   },
   "license": "MIT",
   "type": "module",
@@ -42,6 +47,10 @@
   },
   "simple-git-hooks": {
     "pre-commit": "npm run lint:write"
+  },
+  "dependencies": {
+    "axios": "1.11.0",
+    "vue-hooks-plus": "1.7.6"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.1.1",
