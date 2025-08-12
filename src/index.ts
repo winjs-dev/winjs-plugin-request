@@ -1,7 +1,7 @@
-import { Mustache, winPath } from '@winner-fed/utils';
 import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { Mustache, winPath } from '@winner-fed/utils';
 import type { IApi } from '@winner-fed/winjs';
 
 // 获取当前模块的目录路径，兼容 ES 模块和 CommonJS
