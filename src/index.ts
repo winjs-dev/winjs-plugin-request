@@ -25,10 +25,14 @@ export default (api: IApi) => {
           .object({
             dataField: zod
               .union([zod.string(), zod.literal('')])
-              .describe('响应数据提取字段名。用于指定从 API 响应中提取数据的字段路径。设置为非空字符串时（如 "data"、"result"），将从响应对象中提取对应字段的值作为最终数据；设置为空字符串 "" 时，直接返回完整的响应对象不做字段提取。默认值为 "data"，即从 response.data 中提取数据。此配置会影响 useRequest 和 request 方法的数据格式化行为。')
-              .optional()
+              .describe(
+                '响应数据提取字段名。用于指定从 API 响应中提取数据的字段路径。设置为非空字符串时（如 "data"、"result"），将从响应对象中提取对应字段的值作为最终数据；设置为空字符串 "" 时，直接返回完整的响应对象不做字段提取。默认值为 "data"，即从 response.data 中提取数据。此配置会影响 useRequest 和 request 方法的数据格式化行为。',
+              )
+              .optional(),
           })
-          .describe('HTTP 请求插件配置。基于 axios 和 vue-hooks-plus 提供统一的 HTTP 请求解决方案，支持 Vue3 的 useRequest hook、请求/响应拦截器、错误处理和数据格式化等功能。集成运行时插件系统，支持动态配置请求实例和拦截器。')
+          .describe(
+            'HTTP 请求插件配置。基于 axios 和 vue-hooks-plus 提供统一的 HTTP 请求解决方案，支持 Vue3 的 useRequest hook、请求/响应拦截器、错误处理和数据格式化等功能。集成运行时插件系统，支持动态配置请求实例和拦截器。',
+          )
           .optional()
           .default({});
       },

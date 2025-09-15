@@ -43,7 +43,7 @@
     "lint:write": "biome check . --write",
     "prepare": "simple-git-hooks && npm run build",
     "test": "playwright test",
-    "bump": "npx bumpp"
+    "bump": "bumpp"
   },
   "simple-git-hooks": {
     "pre-commit": "npm run lint:write"
@@ -61,6 +61,7 @@
     "@winner-fed/winjs": "*",
     "playwright": "^1.53.2",
     "simple-git-hooks": "^2.13.0",
+    "bumpp": "10.2.3",
     "typescript": "^5.8.3"
   },
   "peerDevDependencies": {
