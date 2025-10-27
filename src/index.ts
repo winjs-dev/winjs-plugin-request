@@ -52,7 +52,7 @@ export default (api: IApi) => {
       dirname(require.resolve('vue-hooks-plus/package.json')),
     );
     const axiosPath = winPath(dirname(require.resolve('axios/package.json')));
-    let dataField = api.config.request?.dataField;
+    let dataField = api.userConfig.request?.dataField;
     if (dataField === undefined) dataField = 'data';
     const isEmpty = dataField === '';
     const formatResult = isEmpty
