@@ -50,20 +50,20 @@
     "pre-commit": "npm run lint:write"
   },
   "dependencies": {
-    "axios": "1.11.0",
+    "axios": "1.20.0",
     "vue-hooks-plus": "1.9.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.1.4",
-    "@playwright/test": "^1.54.2",
-    "@rsbuild/core": "^1.4.15",
-    "@rslib/core": "^0.12.0",
-    "@types/node": "^22.17.1",
+    "@biomejs/biome": "^2.5.13",
+    "@playwright/test": "^1.63.0",
+    "@rsbuild/core": "^1.7.6",
+    "@rslib/core": "^0.23.2",
+    "@types/node": "^22.20.2",
     "@winner-fed/winjs": "*",
-    "playwright": "^1.54.2",
-    "simple-git-hooks": "^2.13.1",
-    "bumpp": "10.2.3",
-    "typescript": "^5.9.2"
+    "playwright": "^1.63.0",
+    "simple-git-hooks": "^2.14.0",
+    "bumpp": "10.4.1",
+    "typescript": "^5.9.3"
   },
   "peerDevDependencies": {
     "@winner-fed/winjs": "*"
